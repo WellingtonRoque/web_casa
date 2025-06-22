@@ -17,6 +17,9 @@
             font-weight: bold;
             color: #f8c146 !important;
         }
+        .nav-link {
+            color: white !important;
+        }
         h1, h3 {
             color: #222;
         }
@@ -45,23 +48,29 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container">
-    <span class="navbar-brand mb-0 h1">
-      <i class="bi bi-house-door-fill icon"></i>
-      Casa à Venda - Residencial Barnabé
-    </span>
+    <a class="navbar-brand" href="#"><i class="bi bi-house-door-fill icon"></i>Casa à Venda - Residencial Barnabé</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#fotos">Fotos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#info">Informações</a></li>
+        <li class="nav-item"><a class="nav-link" href="#obra">Acompanhamento da Obra</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+      </ul>
+    </div>
   </div>
 </nav>
 
 <div class="container mt-4">
-    <h1 class="text-center">
-      <i class="bi bi-house-fill icon"></i>
-      Casa à Venda - Residencial Barnabé - Salto/SP
-    </h1>
+    <h1 class="text-center"><i class="bi bi-house-fill icon"></i>Casa à Venda - Residencial Barnabé - Salto/SP</h1>
     <p class="text-center fs-5">
-      🏠 Casa nova com projeto moderno, excelente acabamento e ampla área no fundo para construção de espaço gourmet e piscina.
+      🏠 Casa nova com projeto moderno, excelente acabamento e ampla área no fundo para construção de espaço gourmet e piscina. Localizada no bairro Residencial Barnabé - Salto/SP.
     </p>
 
-    <div class="highlight mb-4">
+    <!-- Fotos -->
+    <div id="fotos" class="highlight mb-4">
         <h3><i class="bi bi-images icon"></i>Fotos do Projeto</h3>
         <div class="row g-3">
             <div class="col-md-4">
@@ -82,7 +91,8 @@
         </div>
     </div>
 
-    <div class="highlight mb-4">
+    <!-- Informações -->
+    <div id="info" class="highlight mb-4">
         <h3><i class="bi bi-info-circle-fill icon"></i>Informações do Imóvel</h3>
         <ul class="list-group list-group-flush">
             <li class="list-group-item"><i class="bi bi-check-circle-fill icon"></i>Área do Terreno: 187,50 m²</li>
@@ -94,17 +104,32 @@
             <li class="list-group-item"><i class="bi bi-check-circle-fill icon"></i>Acabamento em porcelanato de alta qualidade</li>
             <li class="list-group-item"><i class="bi bi-check-circle-fill icon"></i>Fachada moderna e funcional</li>
             <li class="list-group-item"><i class="bi bi-check-circle-fill icon"></i>Ampla área no fundo com possibilidade de área gourmet e piscina</li>
+            <li class="list-group-item"><i class="bi bi-calendar-check icon"></i><b>Previsão de término da obra: Dezembro/2025</b></li>
             <li class="list-group-item"><i class="bi bi-check-circle-fill icon"></i>Documentação 100% regularizada e projeto aprovado</li>
         </ul>
     </div>
 
-    <div class="highlight mb-4">
-        <h3><i class="bi bi-geo-alt-fill icon"></i>Localização</h3>
-        <p><i class="bi bi-geo-alt icon"></i>Rua Luiz Petrini - Colaborador Vicentino - Lote 19 - Quadra J, Residencial Barnabé - Salto/SP</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14606.10502605493!2d-47.2527313!3d-23.1921585!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDExJzMxLjgiUyA0N8KwMTUnMDkuOCJX!5e0!3m2!1spt-BR!2sbr!4v1718470000000" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <!-- Acompanhamento da Obra -->
+    <div id="obra" class="highlight mb-4">
+        <h3><i class="bi bi-building icon"></i>Acompanhamento da Obra</h3>
+        <p>🔨 Acompanhe aqui a evolução da construção da residência. Atualizamos mensalmente para que você acompanhe cada etapa.  
+        <br><b>Previsão de término: Dezembro/2025.</b></p>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-dark text-white">Junho/2025</div>
+                    <img src="portfolio/junho-2025/foto1.jpg" class="card-img-top" alt="Junho obra">
+                    <div class="card-body">
+                        <p class="card-text">Início da fundação e terraplanagem.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Quando quiser, adicione mais colunas assim para julho, agosto... -->
+        </div>
     </div>
 
-    <div class="highlight mb-4">
+    <!-- Contato -->
+    <div id="contato" class="highlight mb-4">
         <h3><i class="bi bi-telephone-fill icon"></i>Contato</h3>
         <p>
             <i class="bi bi-whatsapp icon"></i>WhatsApp: <a href="https://wa.me/5511995030211" target="_blank">(11) 99503-0211</a><br>
@@ -112,6 +137,7 @@
         </p>
     </div>
 
+    <!-- Responsáveis -->
     <div class="highlight mb-4">
         <h3><i class="bi bi-person-badge-fill icon"></i>Responsáveis pelo Projeto</h3>
         <p><strong>Engenheiro:</strong> Anderson Ricardo Coelho - CREA: 5069719172<br>
