@@ -42,11 +42,41 @@
             color: #f8c146;
             margin-right: 8px;
         }
-    </style>
+    
+.navbar-nav .nav-link:hover {
+    color: #f8c146 !important;
+}
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+.btn-danger:hover {
+    background-color: #bb2d3b;
+    border-color: #b02a37;
+}
+
+</style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark">
+
+<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-dark" href="#"><i class="bi bi-house-door-fill me-2"></i>Casa à Venda</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="#fotos">Fotos</a></li>
+        <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="#info">Informações</a></li>
+        <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="#obra">Obra</a></li>
+        <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="#contato">Contato</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
   <div class="container">
     <a class="navbar-brand" href="#"><i class="bi bi-house-door-fill icon"></i>Casa à Venda - Residencial Barnabé</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -65,6 +95,12 @@
 
 <div class="container mt-4">
     <h1 class="text-center"><i class="bi bi-house-fill icon"></i>Casa à Venda - Residencial Barnabé - Salto/SP</h1>
+<div class="text-center my-3">
+  <a href="docs/projeto-casa.pdf" class="btn btn-danger btn-lg shadow-sm" target="_blank">
+    <i class="bi bi-file-earmark-pdf-fill me-2"></i>Ver Projeto Arquitetônico (PDF)
+  </a>
+</div>
+
     <p class="text-center fs-5">
       🏠 Casa nova com projeto moderno, excelente acabamento e ampla área no fundo para construção de espaço gourmet e piscina. Localizada no bairro Residencial Barnabé - Salto/SP.
     </p>
@@ -214,20 +250,9 @@
 
 <footer class="text-white text-center py-3 mt-5">
     &copy; 2025 - Wellington Roque
-
-<!-- Projeto Arquitetônico -->
-<div class="highlight mb-4">
-    <h3><i class="bi bi-file-earmark-pdf-fill icon"></i> Projeto Arquitetônico</h3>
-    <p>
-        📐 Você pode visualizar ou baixar o projeto da casa completo em PDF no link abaixo:
-    </p>
-    <a href="docs/WELLINGTON-PROJETO.pdf" target="_blank" class="btn btn-outline-danger">
-        <i class="bi bi-file-earmark-pdf-fill"></i> Ver Projeto em PDF
-    </a>
-</div>
-
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
