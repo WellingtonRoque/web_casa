@@ -19,6 +19,10 @@
         }
         .nav-link {
             color: white !important;
+            transition: 0.3s;
+        }
+        .nav-link:hover {
+            color: #f8c146 !important;
         }
         h1, h3 {
             color: #222;
@@ -42,64 +46,62 @@
             color: #f8c146;
             margin-right: 8px;
         }
-    
-.navbar-nav .nav-link:hover {
-    color: #f8c146 !important;
-}
-.btn-danger {
-    background-color: #dc3545;
-    border-color: #dc3545;
-}
-.btn-danger:hover {
-    background-color: #bb2d3b;
-    border-color: #b02a37;
-}
-
-</style>
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
+        .btn-danger:hover {
+            background-color: #bb2d3b;
+            border-color: #b02a37;
+        }
+        .btn-success {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+        .btn-success:hover {
+            background-color: #218838;
+            border-color: #1e7e34;
+        }
+    </style>
 </head>
 <body>
 
-
-<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg sticky-top shadow-sm">
   <div class="container">
-    <a class="navbar-brand fw-bold text-dark" href="#"><i class="bi bi-house-door-fill me-2"></i>Casa à Venda</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <a class="navbar-brand" href="#"><i class="bi bi-house-door-fill me-2"></i>Casa à Venda</a>
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="#fotos">Fotos</a></li>
-        <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="#info">Informações</a></li>
-        <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="#obra">Obra</a></li>
-        <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="#contato">Contato</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="#fotos">Fotos</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="#info">Informações</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="#obra">Obra</a></li>
+        <li class="nav-item"><a class="nav-link fw-semibold" href="#contato">Contato</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-  <div class="container">
-    <a class="navbar-brand" href="#"><i class="bi bi-house-door-fill icon"></i>Casa à Venda - Residencial Barnabé</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#fotos">Fotos</a></li>
-        <li class="nav-item"><a class="nav-link" href="#info">Informações</a></li>
-        <li class="nav-item"><a class="nav-link" href="#obra">Acompanhamento da Obra</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
+<!-- Cabeçalho -->
 <div class="container mt-4">
     <h1 class="text-center"><i class="bi bi-house-fill icon"></i>Casa à Venda - Residencial Barnabé - Salto/SP</h1>
-<div class="text-center my-3">
-  <a href="docs/WELLINGTON-PROJETO.pdf" class="btn btn-danger btn-lg shadow-sm" target="_blank">
-    <i class="bi bi-file-earmark-pdf-fill me-2"></i>Ver Projeto Arquitetônico (PDF)
-  </a>
-</div>
+
+    <!-- Botão PDF -->
+    <div class="text-center my-3">
+      <a href="docs/WELLINGTON-PROJETO.pdf" class="btn btn-danger btn-lg shadow-sm" target="_blank">
+        <i class="bi bi-file-earmark-pdf-fill me-2"></i>Ver Projeto Arquitetônico (PDF)
+      </a>
+    </div>
+
+    <!-- Botão Geolocalização -->
+    <div class="text-center mb-4">
+      <a href="https://www.google.com/maps?q=-23.1921585,-47.2527313&z=17&hl=pt-BR/" 
+         class="btn btn-success btn-lg shadow-sm" target="_blank">
+        <i class="bi bi-geo-alt-fill me-2"></i>Ver Localização no Google Maps
+      </a>
+    </div>
 
     <p class="text-center fs-5">
       🏠 Casa nova com projeto moderno, excelente acabamento e ampla área no fundo para construção de espaço gourmet e piscina. Localizada no bairro Residencial Barnabé - Salto/SP.
@@ -109,21 +111,9 @@
     <div id="fotos" class="highlight mb-4">
         <h3><i class="bi bi-images icon"></i>Fotos do Projeto</h3>
         <div class="row g-3">
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <img src="img/3D-Fachada1.jpeg" class="card-img-top" alt="Fachada 1">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <img src="img/3D-Fachada2.jpeg" class="card-img-top" alt="Fachada 2">
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card shadow-sm">
-                    <img src="img/3D-SalaCozinha.jpeg" class="card-img-top" alt="Sala e Cozinha">
-                </div>
-            </div>
+            <div class="col-md-4"><div class="card shadow-sm"><img src="img/3D-Fachada1.jpeg" class="card-img-top" alt="Fachada 1"></div></div>
+            <div class="col-md-4"><div class="card shadow-sm"><img src="img/3D-Fachada2.jpeg" class="card-img-top" alt="Fachada 2"></div></div>
+            <div class="col-md-4"><div class="card shadow-sm"><img src="img/3D-SalaCozinha.jpeg" class="card-img-top" alt="Sala e Cozinha"></div></div>
         </div>
     </div>
 
@@ -146,424 +136,47 @@
     </div>
 
     <!-- Acompanhamento da Obra -->
-<div id="obra" class="highlight mb-4">
-    <h3><i class="bi bi-building icon"></i> Acompanhamento da Obra</h3>
-    <p>
-        🔨 Acompanhe aqui a evolução da construção da residência no Residencial Barnabé - Salto/SP. Atualizamos mensalmente para que você acompanhe cada etapa.
-        <br><strong>Previsão de término: Dezembro/2025.</strong>
-    </p>
+    <div id="obra" class="highlight mb-4">
+        <h3><i class="bi bi-building icon"></i>Acompanhamento da Obra</h3>
+        <p>🔨 Acompanhe aqui a evolução da construção da residência. Atualizado mensalmente até Dezembro/2025.</p>
 
-    <!-- Junho 2025 -->
-    <div class="row g-3">
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Junho/2025</div>
-                <img src="portfolio/junho-2025/foto1.jpeg" class="card-img-top" alt="Obra junho">
-                <div class="card-body">
-                    <p class="card-text">Início da fundação e terraplanagem.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Junho/2025</div>
-                <img src="portfolio/junho-2025/foto2.jpeg" class="card-img-top" alt="Obra junho">
-                <div class="card-body">
-                    <p class="card-text">Terraplanagem em andamento.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Junho/2025</div>
-                <img src="portfolio/junho-2025/foto3.jpeg" class="card-img-top" alt="Obra junho">
-                <div class="card-body">
-                    <p class="card-text">Preparação para concretagem das vigas baldrame.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Junho/2025</div>
-                <img src="portfolio/junho-2025/foto4.jpeg" class="card-img-top" alt="Obra junho">
-                <div class="card-body">
-                    <p class="card-text">Concretagem das vigas baldrame.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Junho/2025</div>
-                <img src="portfolio/junho-2025/foto5.jpeg" class="card-img-top" alt="Obra junho">
-                <div class="card-body">
-                    <p class="card-text">Início da alvenaria e levantamento das primeiras paredes.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Junho/2025</div>
-                <img src="portfolio/junho-2025/foto6.jpeg" class="card-img-top" alt="Obra junho">
-                <div class="card-body">
-                    <p class="card-text">Continuação da alvenaria.</p>
-                </div>
-            </div>
+        <!-- LOOP DE MESES -->
+        <div class="row g-3 mt-3">
+            <!-- Exemplo genérico -->
+            <!-- Copie e troque apenas o nome da pasta e o mês -->
+            <!-- Cada mês tem 6 imagens -->
+            <script>
+              const meses = ["Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+              meses.forEach(mes => {
+                document.write(`
+                  <h4 class="mt-4 mb-3"><i class="bi bi-calendar-week icon"></i>${mes}/2025</h4>
+                `);
+                for (let i=1; i<=6; i++) {
+                  document.write(`
+                    <div class="col-md-6">
+                      <div class="card shadow-sm">
+                        <div class="card-header bg-dark text-white">${mes}/2025</div>
+                        <img src="portfolio/${mes.toLowerCase()}-2025/foto${i}.jpeg" class="card-img-top" alt="Obra ${mes}">
+                        <div class="card-body">
+                          <p class="card-text">Evolução das obras durante o mês de ${mes}.</p>
+                        </div>
+                      </div>
+                    </div>
+                  `);
+                }
+              });
+            </script>
         </div>
     </div>
 
-    <!-- Julho 2025 -->
-    <div class="row g-3 mt-4">
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Julho/2025</div>
-                <img src="portfolio/julho-2025/foto1.jpeg" class="card-img-top" alt="Obra julho">
-                <div class="card-body">
-                    <p class="card-text">Paredes levantadas, início da parte elétrica e preparação da laje.</p>
-                </div>
-            </div>
-        </div>
-    
-    <!-- Agosto 2025 -->
-    <div class="row g-3 mt-4">
-        <h4 class="mb-3"><i class="bi bi-calendar-week icon"></i>Agosto/2025</h4>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Agosto/2025</div>
-                <img src="portfolio/agosto-2025/foto1.jpeg" class="card-img-top" alt="Obra Agosto">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de agosto.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Agosto/2025</div>
-                <img src="portfolio/agosto-2025/foto2.jpeg" class="card-img-top" alt="Obra Agosto">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de agosto.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Agosto/2025</div>
-                <img src="portfolio/agosto-2025/foto3.jpeg" class="card-img-top" alt="Obra Agosto">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de agosto.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Agosto/2025</div>
-                <img src="portfolio/agosto-2025/foto4.jpeg" class="card-img-top" alt="Obra Agosto">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de agosto.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Agosto/2025</div>
-                <img src="portfolio/agosto-2025/foto5.jpeg" class="card-img-top" alt="Obra Agosto">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de agosto.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Agosto/2025</div>
-                <img src="portfolio/agosto-2025/foto6.jpeg" class="card-img-top" alt="Obra Agosto">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de agosto.</p>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-    
-    <!-- Setembro 2025 -->
-    <div class="row g-3 mt-4">
-        <h4 class="mb-3"><i class="bi bi-calendar-week icon"></i>Setembro/2025</h4>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Setembro/2025</div>
-                <img src="portfolio/setembro-2025/foto1.jpeg" class="card-img-top" alt="Obra Setembro">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de setembro.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Setembro/2025</div>
-                <img src="portfolio/setembro-2025/foto2.jpeg" class="card-img-top" alt="Obra Setembro">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de setembro.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Setembro/2025</div>
-                <img src="portfolio/setembro-2025/foto3.jpeg" class="card-img-top" alt="Obra Setembro">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de setembro.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Setembro/2025</div>
-                <img src="portfolio/setembro-2025/foto4.jpeg" class="card-img-top" alt="Obra Setembro">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de setembro.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Setembro/2025</div>
-                <img src="portfolio/setembro-2025/foto5.jpeg" class="card-img-top" alt="Obra Setembro">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de setembro.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Setembro/2025</div>
-                <img src="portfolio/setembro-2025/foto6.jpeg" class="card-img-top" alt="Obra Setembro">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de setembro.</p>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-    
-    <!-- Outubro 2025 -->
-    <div class="row g-3 mt-4">
-        <h4 class="mb-3"><i class="bi bi-calendar-week icon"></i>Outubro/2025</h4>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Outubro/2025</div>
-                <img src="portfolio/outubro-2025/foto1.jpeg" class="card-img-top" alt="Obra Outubro">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de outubro.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Outubro/2025</div>
-                <img src="portfolio/outubro-2025/foto2.jpeg" class="card-img-top" alt="Obra Outubro">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de outubro.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Outubro/2025</div>
-                <img src="portfolio/outubro-2025/foto3.jpeg" class="card-img-top" alt="Obra Outubro">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de outubro.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Outubro/2025</div>
-                <img src="portfolio/outubro-2025/foto4.jpeg" class="card-img-top" alt="Obra Outubro">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de outubro.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Outubro/2025</div>
-                <img src="portfolio/outubro-2025/foto5.jpeg" class="card-img-top" alt="Obra Outubro">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de outubro.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Outubro/2025</div>
-                <img src="portfolio/outubro-2025/foto6.jpeg" class="card-img-top" alt="Obra Outubro">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de outubro.</p>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-    
-    <!-- Novembro 2025 -->
-    <div class="row g-3 mt-4">
-        <h4 class="mb-3"><i class="bi bi-calendar-week icon"></i>Novembro/2025</h4>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Novembro/2025</div>
-                <img src="portfolio/novembro-2025/foto1.jpeg" class="card-img-top" alt="Obra Novembro">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de novembro.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Novembro/2025</div>
-                <img src="portfolio/novembro-2025/foto2.jpeg" class="card-img-top" alt="Obra Novembro">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de novembro.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Novembro/2025</div>
-                <img src="portfolio/novembro-2025/foto3.jpeg" class="card-img-top" alt="Obra Novembro">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de novembro.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Novembro/2025</div>
-                <img src="portfolio/novembro-2025/foto4.jpeg" class="card-img-top" alt="Obra Novembro">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de novembro.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Novembro/2025</div>
-                <img src="portfolio/novembro-2025/foto5.jpeg" class="card-img-top" alt="Obra Novembro">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de novembro.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Novembro/2025</div>
-                <img src="portfolio/novembro-2025/foto6.jpeg" class="card-img-top" alt="Obra Novembro">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de novembro.</p>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-    
-    <!-- Dezembro 2025 -->
-    <div class="row g-3 mt-4">
-        <h4 class="mb-3"><i class="bi bi-calendar-week icon"></i>Dezembro/2025</h4>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Dezembro/2025</div>
-                <img src="portfolio/dezembro-2025/foto1.jpeg" class="card-img-top" alt="Obra Dezembro">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de dezembro.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Dezembro/2025</div>
-                <img src="portfolio/dezembro-2025/foto2.jpeg" class="card-img-top" alt="Obra Dezembro">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de dezembro.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Dezembro/2025</div>
-                <img src="portfolio/dezembro-2025/foto3.jpeg" class="card-img-top" alt="Obra Dezembro">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de dezembro.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Dezembro/2025</div>
-                <img src="portfolio/dezembro-2025/foto4.jpeg" class="card-img-top" alt="Obra Dezembro">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de dezembro.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Dezembro/2025</div>
-                <img src="portfolio/dezembro-2025/foto5.jpeg" class="card-img-top" alt="Obra Dezembro">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de dezembro.</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-6">
-            <div class="card shadow-sm">
-                <div class="card-header bg-dark text-white">Dezembro/2025</div>
-                <img src="portfolio/dezembro-2025/foto6.jpeg" class="card-img-top" alt="Obra Dezembro">
-                <div class="card-body">
-                    <p class="card-text">Evolução das obras durante o mês de dezembro.</p>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-    
     <!-- Contato -->
     <div id="contato" class="highlight mb-4">
         <h3><i class="bi bi-telephone-fill icon"></i>Contato</h3>
         <p>
-            <i class="bi bi-whatsapp icon"></i>WhatsApp: <a href="https://wa.me/5511995030211" target="_blank">(11) 99503-0211</a><br>
-            <i class="bi bi-envelope-fill icon"></i>E-mail: <a href="mailto:wellington.roque@gmail.com">wellington.roque@gmail.com</a>
+            <i class="bi bi-whatsapp icon"></i>WhatsApp: 
+            <a href="https://wa.me/5511995030211" target="_blank">(11) 99503-0211</a><br>
+            <i class="bi bi-envelope-fill icon"></i>E-mail: 
+            <a href="mailto:wellington.roque@gmail.com">wellington.roque@gmail.com</a>
         </p>
     </div>
 
